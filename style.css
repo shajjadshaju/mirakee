@@ -1,0 +1,766 @@
+/* --------------------------------------------------------------
+* Author        : Kamrul Hasan Nayon
+* Template Name : Mak | One Page Business Html5 Theme
+* File          : Mak main CSS file
+* Version       : 1.0
+* --------------------------------------------------------------*/
+
+/* INDEX
+-----------------------------------------------------------------
+
+01. General css
+
+02. Header css
+
+03. slider css
+
+04. about css
+
+05. service css
+
+06. video css
+
+07. project css
+
+08. counter css
+
+09. testimonial css
+
+10. blog css
+
+11. team css
+
+12. contact css
+
+13. sidebar css
+
+14. footer css
+
+15. comment css
+------------------------------------------------------------------*/
+
+/* ---------------------------------------
+           01. General css
+* ---------------------------------------*/
+body {
+    font-family: 'Oxygen', sans-serif;
+    background: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #424242;
+    overflow-x: hidden;
+}
+/* Common CSS */
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+}
+a {	color:#958E7C;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+a:focus,a:hover {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+img{max-width:100%;}
+input,textarea{
+	color:#000;
+	width:100%;
+	background:#ffc600;
+	border:1px solid #eee;
+	margin-bottom:18px;
+	padding:10px 30px;
+	outline:none;
+}
+input:focus,textarea:focus{
+	border:1px solid #eee;
+	outline:none;
+}
+/* ----UL list design---- */
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	display:inline-block
+}
+span{color:#ffc600}
+
+
+/* ----Bottom Border----- */
+
+.border-btm:before {
+    background: #505cfe none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    position: absolute;
+    width: 70px;
+}
+/* ----sction-padding----- */
+
+.pbt{padding:100px 0}
+.pbt1{padding:40px 0}
+.pb60{padding-bottom:60px;}
+.mb15{margin-bottom:15px}
+.mb20{margin-bottom:20px}
+.mt20{margin-top:20px}
+.mtb20{margin:20px 0}
+
+/* ----Tabuler Display----- */
+.tbl {
+  display: table;
+  width: 100%; }
+
+.tbl-row {
+  display: table-row; }
+  
+.tbl-cell {
+  display: table-cell;
+  vertical-align: middle; }
+
+/* ----Form CSS----- */
+.form-control {
+    height: 40px;
+    margin-bottom: 30px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+.form-control:focus {
+    border-color: #999999;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+::-webkit-input-placeholder {
+    color: #676767 !important;
+}
+::-moz-placeholder {
+    color: #676767 !important;
+}
+::-o-placeholder {
+    color: #676767 !important;
+}
+:-ms-input-placeholder {
+    color: #676767 !important;
+}
+input:-moz-placeholder {
+    color: #676767 !important;
+}
+.video-img:after {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(5,11,33,.9) 0,rgba(57,63,90,.62) 88%);
+    z-index: 1
+}
+	
+/*------Background Color---- */
+
+.dark-bgdark-bg{background:#151821;}
+.gray-bg {background:#efefef;}
+.black-bg {background:#000}
+.single-service.yellow-bg {background:#ffc600;}
+.single-service.blue-bg {background:#4aa1e6;}
+.orange-bg {background:#fe543d;}
+.theme-bg{background:rgba(7,41,78);}
+.theme-bg-dark{background:#021d3a;}
+
+/*------ button CSS----------- */
+.btn{display:inline-block;color:#fff;background:#ffc600;padding:10px 20px;border-radius:0px;text-transform:uppercase;}
+.btn-trans{background:#fff;color:#000;font-weight:bold}
+
+/*------ Overlayer Opacity  CSS----------*/
+.over-layer-black {
+    position: relative;
+}
+.over-layer-black:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: #58adf0;
+
+}
+
+/*-----Default Title CSS------- */
+
+.sectionTitle{
+	text-align:center;
+	margin-bottom:40px;
+}
+.sectionTitle .icon{margin-bottom:20px;}
+
+/*----- Backgrounds--------- */
+
+.bg {
+    background-color: #ddd;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* parallax-background  */
+
+.parallax-background {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+ .parallax-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* ----------shadow------------- */
+.shadow{box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);}
+.shadow1{box-shadow: 0px 5px 14px -3px rgba(0,0,0,0.61);}
+.nav-shadow{box-shadow: 0px 0px 5px #888888;}
+
+/* ---------------------------------------
+           01.Header Top
+* ---------------------------------------*/
+.header-top {
+    padding: 8px;
+}
+
+.header-top ul li {
+    margin-right: 10px;
+    color: #e7e7e7;
+}
+
+
+.header-top .header-left li .fa {
+    color: #ffc600;
+}
+.logo-area a {
+    font-size: 26px;
+    font-weight: bold;
+    display: block;
+    color: rgba(7,41,78);
+    padding: 10px 0;
+}
+.main-menu-area {
+    padding: 10px 0;
+}
+.main-menu ul li {
+    margin-right: 12px;
+}
+
+.main-menu ul li a {
+    display: block;
+    font-size: 15px;
+    padding: 10px;
+    color: rgba(7,41,78);
+}
+/* ---------------------------------------
+           01.sectionIntro
+* ---------------------------------------*/
+.slide-bg-1 {background-image: url(assets/img/bg/bg01.jpg)}
+.slide-bg-2 {background-image: url(assets/img/bg/bg5.jpg)}
+.page-bg-1 {background-image: url(assets/img/bg/bg5.jpg)}
+.event-bg {background-image: url(assets/img/bg/01.jpg)}
+.facility-bg {background-image: url(assets/img/bg/bg13.jpg)}
+.client-bg {background-image: url(assets/img/bg/bg18.jpg)}
+.sectionIntro{height:100vh;width:100%;color:#fff}
+.introContent{height:100%;}
+.introCcontent-cell {color: #fff;}
+.slide-content p {
+    font-size: 30px;
+    line-height: 1;
+}
+.nav-style .owl-nav div{
+	color:#fff;
+	position:absolute;
+	top:50%;
+	left:40px;
+	font-size:20px;
+	background:#fe543d;
+	line-height: 60px;
+    height: 60px;
+	width:22px;
+	text-align:center;
+	z-index:12;
+}
+.nav-style .owl-nav div.owl-next{
+	left:auto;right:40px
+}
+/* ---------------------------------------
+      About Section
+* ---------------------------------------*/
+.about-single span {
+    font-size: 40px;
+    color: #e6e6e6;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.about-single h5 {
+    margin-bottom: 15px;
+}
+ .about-img{
+	position: relative;
+	float: right;
+}
+.about-img:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+	height:100%;
+    top: 36px;
+    left: -60px;
+    border: 2px solid #ffc600;
+    z-index: -1;
+}
+
+.about-img img {
+    display: block;
+    float: right;
+}
+.about-txt ul li {
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 8px;
+}
+.about-txt ul li .fa {
+    font-weight: bold;
+    border: 2px solid #000;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+	line-height: 12px
+}
+/* ---------------------------------------
+        Best Platform Section
+* ---------------------------------------*/
+.best-platform-content{
+	border-radius:0  0 5px 5px
+	}
+	
+.slogan {
+    padding:0 40px
+}
+.slogan p{font-size:36px;line-height:1}
+
+.plaform-icon-box {
+    background: #4886ff;
+    height: 130px;
+    width: 130px;
+	display: inline-block;
+}
+
+.plaform-icon-box .fa {
+    font-size: 65px;
+    line-height: 130px;
+}
+.magenta{background:#b5d56a}
+.purple{background:#ff6f6f}
+
+/* ---------------------------------------
+		Service Section
+* ---------------------------------------*/
+.single-service {
+    padding: 40px 20px;
+    color: #fff;
+    background: #000;
+}
+.single-service .fa{margin-bottom:20px;font-size:30px}
+
+.single-service h6 {
+    padding-bottom: 10px;
+    position:relative
+
+}
+
+.signup-form{
+    margin-top: 0px;
+}
+.form-header {
+    padding: 20px;
+    color: #fff;
+    background-color: #0d1865;
+}
+.form-header h4{color:#ffc600}
+.signup-form .form {
+    padding: 25px;
+}
+/* ---------------------------------------
+           Featured-Course
+* ---------------------------------------*/
+.single-thumb {
+    margin-bottom: 12px;
+}
+.featured-active.nav-style  .owl-nav div {
+    color: #fff;
+    position: absolute;
+    top: -35px;
+    right: 0;
+    font-size: 20px;
+    background: #ffc600;
+    line-height: 22px;
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    z-index: 12;
+}
+
+.featured-active.nav-style .owl-nav div.owl-prev{
+	left:auto;right:50px
+}
+/* ---------------------------------------
+           Counter Section
+* ---------------------------------------*/
+.counter-section{}
+.single-counter {
+    color: #fff;
+    font-size: 24px;
+    text-align: left;
+    position: relative;
+    padding: 40px 0 40px 20px;
+    border: 2px solid #fff;
+    display: inline-block;
+}
+.inner-count {
+    margin-right: -40px;
+    background: #52adf0;
+}
+.single-counter .number {
+    color: #ffc600;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.single-counter span {
+    display: block;
+    font-size: 16px;
+}
+/* ---------------------------------------
+           Application Section
+* ---------------------------------------*/
+.application-content{border-radius:3px}
+.admission {
+    padding:40px;
+	border-radius: 5px 0 0 5px;
+}
+.schlarship {
+    background: #092f56;
+    padding:40px;
+	border-radius: 0 5px 5px 0;
+}
+.left-blog .blog-single img{width:100%!important}
+
+.right-blog .blog-single {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 135px;
+}
+.right-blog .blog-single .blog-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+	height: 90px;
+    width: 120px;
+}
+.blog-image img {
+    display: block;
+    height: 100%;
+	width:100%;
+	margin-top:5px;
+}
+ul.post-meta {
+    margin-bottom: 4px;
+}
+
+ul.post-meta li {
+    font-size: 14px;
+    margin-right: 6px;
+}
+.blog-single .blog-content h6>a {
+    color: #000;
+}
+ul.post-meta li .fa {
+    color: #ffc600;
+    margin-right: 8px;
+}
+
+
+/* ---------------------------------------
+         Featured-teacher
+* ---------------------------------------*/
+.single-teacher{
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.teacher-img {
+    margin-right: 10px;
+}
+.students-quate p {
+    margin-bottom: 10px;
+}
+
+.teacher-info span .fa {
+    margin-right: 5px;
+	color:#ffc600;
+}
+/* ---------------------------------------
+         Upcoming Events Section
+* ---------------------------------------*/
+
+.depertments-logo img{
+	max-width:70%
+}
+.events {
+    position: relative;
+}
+.events:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgba(7,41,78,0.3), rgba(7,41,78,1));
+    height: 100%;
+    width: 100%;
+}
+li.single-event {
+    display: block;
+    margin-bottom: 20px;
+}
+li.single-event span{margin-right:8px}
+li.single-event .fa {
+    color: #ffc600;
+    margin-right: 8px;
+}
+.students-quate {
+    padding: 30px;
+    color: #fff;
+    background-color: rgba(7,41,78,0.1);
+}
+.students-quate {
+    padding: 30px;
+    background-color: rgba(7,41,78);
+    color: #fff;
+}
+.students-quate h4 {
+    margin-bottom: 30px;
+}
+.students-quate .fa {
+	color:#ffc600;
+    font-size: 36px;
+}
+.facilities {
+    color: #fff;
+    padding:65px;
+}
+.our-facility{
+	position:relative
+}
+.our-facility:before {
+    content:"";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: #123356;
+    opacity:.8
+}
+.facilities-single{
+	margin-top:24px;
+	
+}
+.facilities-icon {
+    color: #ffc600;
+    font-size: 60px;
+    margin-right: 20px;
+}
+
+.video-icon {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+    height: 60px;
+    width: 60px;
+    background: #ffc600;
+    border-radius: 500px;
+    text-align: center;
+    line-height: 60px;
+}
+/* ---------------------------------------
+      Meet The Teacher Section
+* ---------------------------------------*/
+.teacher-profile {
+    margin-bottom: 20px;
+	position:relative
+}
+
+.teacher-image img {
+    height: 255px;
+    width: 100%;
+    border-radius: 5px;
+}
+.teacher-details {
+    position: absolute;
+    bottom: 10px;
+    background: #fff;
+    left: 50%;
+    transform: translatex(-50%);
+    padding: 10px 20px;
+    width: 80%;
+    border-radius: 5px;
+    text-align: center;
+}
+/* ---------------------------------------
+        Client Testimonial Section
+* ---------------------------------------*/
+.testimonial-outer{padding:80px 20px 20px 20px}
+.single-Testimonial {
+    background: #ffc600;
+    position: relative;
+    /* width: 50%; */
+    padding: 100px 40px 40px;
+    text-align: center;
+}
+
+.clientImage {
+    position: absolute;
+    top: -41px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.clientImage img {
+    display: block;
+    border-radius: 50%;
+}
+/* ---------------------------------------
+     Pricing Section
+* ---------------------------------------*/
+.black .pricing-singlle {
+    border-top: 4px solid #000;
+}
+.black .pricing-singlle  .pricing-content span{
+    color:#000
+}
+.yellow .pricing-singlle {
+    border-top: 4px solid #ffbd0f;
+}
+.yellow .pricing-singlle  .pricing-content span{
+    color:#ffbd0f
+}
+.blue .pricing-singlle {
+    border-top: 4px solid #4aa1e6;
+}
+.blue .pricing-singlle  .pricing-content span{
+    color:#4aa1e6
+}
+.pricing-header {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+}
+.pricing-content span{font-size:24px}
+.pricing-content ul li {
+    display: block;
+    padding: 6px 0;
+}
+
+.pricing-content ul li .fa{margin-right:6px}
+.pricing-content {
+    padding: 20px 0;
+}
+
+.pricing-content .btn {
+    padding: 10px 60px;
+    margin-bottom: -56px;
+}
+
+
+/* ---------------------------------------
+     Blog Section
+* ---------------------------------------*/
+.single-blog h6 {
+    margin: 15px 0 10px;
+}
+.single-blog p{margin-bottom:15px;}
+
+/* ---------------------------------------
+      Contact Details Section
+* ---------------------------------------*/
+
+.contact-details {
+    padding: 24px 25px;
+}
+
+.single-contacts {
+	 font-size: 13px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.single-contacts .fa {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 26px;
+}
+
+.single-contacts:last-child {
+    margin-bottom: 0;
+}
+.footer-widget .logo-area a{color:#fff}
+.footer-widget p{margin-bottom:10px;}
+.subscribe-form input,.subscribe-form button {
+    width: 100%;
+    height: 100%;
+    background: #ffc600;
+    border: none;
+	text-align:center;
+	color:#fff;
+	padding:10px
+}
+.footer-copyright{padding:10px;}
+.footer-social ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #ffc600;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+}

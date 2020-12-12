@@ -1,0 +1,94 @@
+/*----------------------------------------------
+*AUTHOR       :Shajjad Hossain
+*TEMPLATE NAME:Nehar kebab
+*FILE         :Default stylsheet
+*VERSION      :01
+*----------------------------------------------*/
+html,body{
+	
+	color:#777;
+	font-size:17px;
+	line-height:24px;
+	font-family:  sans-serif;
+	overflow-x: hidden;
+}
+	
+img{
+	width:100%;
+	margin-bottom:30px
+}
+
+ul{
+	margin:0;padding:0
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+	padding:0;
+}
+.p-100{
+	padding:80px 0;
+}
+.p-15{
+	padding:15px 0;
+}
+
+.sectionTitle{
+	color:#fff;
+  text-align:center;
+  margin-bottom:60px;
+  position:relative
+}
+.sectionTitle:after{
+	background:#bf882b;
+	bottom: -20px;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 65px;
+}
+
+.no-padding{
+	padding:0;margin:0;
+	}
+.no-padding img{
+	position:relative;overflow:hidden
+}
+.text-blue{
+	color:#3269eb;
+}
+.text-black{
+	color:#000;
+}
+.centeredTxt{
+	text-align:center;color:#fff
+}
+/*----------scroll-top-button-----------*/
+
+#scroll-top-area {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  border-radius: 4px;
+  z-index: 8;
+  display: none;
+  transition: all 6s;
+}
+
+#scroll-top-area i {
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 25px;
+}
+.custom-but{
+	display:inline-block;
+	background-color:#3269eb;
+	color:#fff;
+	margin-top:20px;
+	padding:5px 15px;
+	border-radius:2px;
+}
